@@ -12,7 +12,7 @@ import './styles.css';
 
 const TearcherList: React.FC = () => {
   const [teachers, setTeachers] = useState([]);
-  const [warning, setWarning] = useState('Pesquise um médico um médico');
+  const [warning, setWarning] = useState('Pesquise por médicos');
 
 
   const [subject, setSubject] = useState('');
@@ -34,10 +34,8 @@ const TearcherList: React.FC = () => {
       setWarning(null);
   } else {
     setWarning('Não há médicos com essas características')
-    console.log('')
   }
   }
-
 
   return (
     <div id="page-teacher-list" className="container">
